@@ -7,8 +7,7 @@ resource "aws_instance" "web" {
         inline = [
             "sudo yum install httpd -y",
             "sudo service httpd start",
-            "sudo chkconfig httpd on",
-            "sudo echo 'Hello Jyoti' > /var/www/html/index.html"
+            "sudo chkconfig httpd on"
         ]
 
         connection {
@@ -33,8 +32,7 @@ resource "aws_instance" "web2" {
         inline = [
             "sudo yum install httpd -y",
             "sudo service httpd start",
-            "sudo chkconfig httpd on",
-            "sudo echo 'Hello Jyoti' > /var/www/html/index.html"
+            "sudo chkconfig httpd on"
         ]
 
         connection {
