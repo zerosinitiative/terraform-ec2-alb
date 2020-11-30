@@ -25,3 +25,9 @@ nodeGroups:
 # Install eksctl
 # Install aws-iam-authenticator
 # eksctl create cluster -f eks-create-cluster.yaml    
+
+# kubectl get pods
+# kubectl get pods -o wide
+# kubectl get svc
+# NodePort - Take that port (30000-32000) add it to your security group of the node open it to your Public IP or 0.0.0.0/0
+# kubectl get deploy
